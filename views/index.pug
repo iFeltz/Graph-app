@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title= 'Test'
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		style
+			include ../styles/daterangepicker.css
+			include ../styles/main.css
+	body
+		div.wrapper
+			div.row
+				h3 Тестовое задание
+				input.input(type="number" v-on:change="fetchData" min="0" max="1e4" v-model="ID")
+				input.input#myDate(type="text" name="daterange" value="01/01/2017 - 01/31/2017" readonly)
+			div.results
+				div.info
+					div
+						span CPA
+						span {{ CPA }} &#8381;
+					div
+						span Доход
+						span {{ encome }} &#8381;
+				canvas#graph(width="640" height="480")
+		script(src="https://cdn.jsdelivr.net/npm/vue")
+		script(src="https://cdn.jsdelivr.net/npm/vue-resource@1.4.0")
+		script(src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js")
+		script(src="https://unpkg.com/axios/dist/axios.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js")
+		script
+			include ../src/jquery.min.js
+			include ../src/bootstrap.min.js
+			include ../src/moment.min.js
+			include ../src/daterangepicker.js
+			include ../src/main.js
+			include ../src/vue.js

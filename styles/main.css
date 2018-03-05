@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	background-color: #ccc;
+	height: 100vh;
+}
+
+.wrapper {
+	position: absolute;
+	width: 60%;
+	height: 100vh;
+	left: 20%;
+	background-color: #eee;
+	box-shadow: 0 0 10px 0 #111;
+}
+
+.row {
+	width: 300px;
+	height: 160px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: #ccc;
+	border: 3px solid #777;
+	border-radius: 8px;
+}
+
+.row:first-child {
+	margin-top: 90px;
+}
+
+.row h3 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.input {
+	display: block !important;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	background-color: #333;
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+	padding-left: 10px;
+	top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #eee;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.results {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.info {
+	width: 400px;
+	height: 120px;
+	margin: 30px auto;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.info div {
+	display: block;
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+}
+
+.info div:last-child {
+	background-color: #333;
+}
+
+.info div span {
+	padding-left: 15px;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.info div:last-child span {
+	color: #ddd;
+}
+
+.info div span:last-child {
+	float: right;
+	padding-right: 15px;
+	text-transform: none;
+}
+
+#graph {
+	width: 900px !important;
+	height: 480px !important;
+}
